@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My resume</title>
+        <link rel="stylesheet" href="resume.css" />
+        <!-- <script src="resume.js"></script> -->
+    </head>
+    <body>
+        <header>
+            <div>
+                <p id="header" style="display: inline-block">个人简历</p>
+                <p id="headerDesc" style="display: inline-block">细心从每一个小细节开始。<br>
+                    Personal resume</p>
+                <p id="imageList" style="display: inline-block">
+                    <img src="images/图标1.png" alt="图标1">
+                    <img src="images/图标2.png" alt="图标2">
+                    <img src="images/图标3.png" alt="图标3">
+                </p>
+            </div>
+
+            <p id="blue-band">
+               <span id="l1"></span>
+               <span id="l2"></span>
+            </p> 
+            
+        </header>
+
+        <main style="position: relative;">
+            <p id="left-line"></p>
+            <div id="div2" class="container">
+                <h1>基本信息</h1>
+                <p class="header-decoration"></p>               
+            </div>
+            <div id="baseInfo">
+                <ul id="ul1" style="display: inline-block">
+                    <li>姓   名	：温远超</li>
+                    <li>手   机	：13421730247（微信同号）</li>
+                    <li>邮   箱 ：nfcwyc@163.com</li>
+                </ul>
+                <ul id="ul2" style="display: inline-block">
+                    <li>性    别 ：男</li>
+                    <li>年    龄 ：24</li>	
+                    <li>就读院校 ：上海海洋大学</li>
+                    <li>学    历 ：研二在读</li>
+                </ul>
+                <img src="images/cat.png" style="height: 80%;width: 10%;">
+            </div>
+
+            <div class="container">
+                <h1>自我评价</h1>
+                <p class="header-decoration"></p>               
+            </div>
+            <ol id="selfDesc">
+                <li>精通Python，在科研和竞赛方面具有两年相关编程经验；</li>
+                <li>熟悉selenium，了解requests和BeautifulSoup；</li>
+                <li>熟悉HTML、CSS和JavaScript；</li>
+                <li>了解正则表达式re、数据库MySQL、操作系统Linux；</li>
+                <li>熟练使用一些涉及算法和数据结构、大数据分析，机器学习和深度学习的Python库；</li>
+                <li>热爱编程，学习能力强，能自主发现井解决开发中遇到的问题；有较强的工作责任心和良好的沟通协调能力。</li>
+            </ol>
+
+            <div class="container">
+                <h1>项目经历</h1>
+                <p class="header-decoration"></p>               
+            </div>
+            <div id="project">
+                <span class="c1">2020/9-2020/10</span>
+                <span class="c2">海陆空环境建模项目</span>
+                <p>负责DEM高程数据的爬取下载与预处理：利用selenium库的xpath方法来
+                查找并点击对应的下载按钮，最终实现22603个zip数据的爬取下载。</p>
+                <p>克服难点：①因数据量大，无法直接从网页中获取，所以采用selenium库
+                    模拟人的操作进行批量下载；②zip文件下载速度较慢，采用设定等候条
+                    件的方式适当限制同时下载数量以防止浏览器出现卡死现象；③网页渲染
+                    较慢导致部分数据文件未能下载，采用隐式等待的方式来解决；④文件数
+                    量太多并且部分文件重复，根据文件名去重，在zip解压之后按照相同纬
+                    度横向拼接。</p>
+                
+                <span class="c1">2020/7-2020/7</span>
+                <span class="c2">综合数值模拟及遥感技术的渤海悬浮泥沙浓度研究</span>
+                <p>负责黄河水流量数据爬取：利用selenium库中的xpath查找，操作浏览器
+                    按日期选取数据，再使用BeautifulSoup解析html并查找td元素下的数
+                    据从而实现黄河水流量数据的爬取。</p>
+            </div>
+
+            <div class="container">
+                <h1>技能证书</h1>
+                <p class="header-decoration"></p>               
+            </div>
+            <div id="skill">
+            <table>
+                <tr><th>编程语言相关</th><th></th></tr>
+                <tr>
+                    <td class="c1">2017/09</td>
+                    <td><a href="images/skill/201709计算机二级.jpg" target="_blank" title="点击查看图片">
+                        C语言程序设计计算机二级证书（成绩优秀）</a></td>
+                </tr>
+                <tr>
+                    <td class="c1">2020/11</td>
+                    <td>2020-2021年度第二届全国大学生算法设计与编程挑战赛（秋季赛）成功参赛奖（Python）</td>
+                </tr>
+                <tr>
+                    <td class="c1">2021/01</td>
+                    <td>2020全国高校计算机能力挑战赛程序设计赛（Python）华东区域赛三等奖</td>
+                </tr>
+                <tr><th>机器学习相关</th><th></th></tr>
+                <tr>
+                    <td class="c1">2020/08</td>
+                    <td>“华数杯”全国大学生数学建模竞赛三等奖</td>
+                </tr>
+                <tr>
+                    <td class="c1 bold">2020/12</td>
+                    <td class="bold"><a href="images/skill/202012华为杯.png" target="_blank" title="点击查看图片">
+                        “华为杯”第十七届中国研究生数学建模竞赛三等奖</a></td>
+                </tr>
+                <tr><th>人工智能相关</th><th></th></tr>
+                <tr>
+                    <td class="c1" rowspan="2">2021/01</td>
+                    <td><a href="images/skill/202101人工智能应用赛三等奖.jpg" target="_blank" title="点击查看图片"></a>
+                        2020年第二届全国高校计算机能力挑战赛人工智能应用赛决赛三等奖</td>
+                </tr>
+                <tr>
+                    <!-- <td></td> -->
+                    <td>上海市高等学校信息技术水平考试（二三级人工智能技术及应用）三级合格</td>
+                </tr>
+                <tr>
+                    <td class="c1">2021/02</td>
+                    <td><a href="images/skill/20210202软著.jpg" target="_blank" title="点击查看图片">
+                        计算机软件著作权证书（图像语义分割软件V1.0）</a></td>
+                </tr>
+                <tr><th>其他</th><th></th></tr>
+                <tr>
+                    <td class="c1">2018/12</td>
+                    <td>英语六级证书</td>
+                </tr>
+            </table>
+            </div>
+            
+            <div class="container">
+                <h1>教育背景</h1>
+                <p class="header-decoration"></p>               
+            </div>
+            <table id="education">
+                <tr>
+                    <td>2015.09 - 2019.06</td>
+                    <td>广东海洋大学</td>
+                    <td>海洋技术专业（硬件方向）</td>
+                </tr>
+                <tr>
+                    <td>2019.09 - 至今</td>
+                    <td>上海海洋大学</td>
+                    <td>海洋科学专业（遥感信息智能化提取方向）</td>
+                </tr>
+                
+            </table>
+            <p></p>
+            <div class="container">
+                <h1>  </h1>             
+            </div>
+        </main>
+        <footer>
+            <p style="display: block;">Copyright &copy; 2021, Y C Wen. All Rights Reserved.</p>
+        </footer>
+
+    </body>
+</html>

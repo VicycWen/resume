@@ -1,0 +1,252 @@
+header {
+    position: relative;
+    /* border: 1px solid gray; */
+    width: 50%;
+    /* margin: auto; */
+
+    min-width: 700px;
+}
+header div {
+    position: relative;
+    /* border: 1px solid; */
+    margin: 0px;
+}
+#header {
+    float: left;
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid gray; */
+    margin: 5px 0px 0px 0px;
+
+    text-indent: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(66, 66, 241);
+}
+#headerDesc {
+    position: relative;
+    /* position: relative;
+    top: 20px;
+    left: 400px; */
+    /* margin: auto; */
+    /* top: 10px; */
+    margin: 10px 0px 0px 0px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 50%;
+    /* border: 1px solid gray; */
+
+    text-align: center;
+    font-size: smaller;
+    color: rgb(172, 169, 169);
+}
+#imageList {
+    position: absolute;
+    top: 0%;
+    right: 10%;
+}
+#blue-band {
+    margin: 0%;
+} 
+#l1,#l2 {
+    border: 1px solid gray;
+    margin: 0px;
+    display: inline-block;
+    background-color: rgb(66, 66, 241);
+}
+#l1 {
+    width: 60%;
+    height: 15px;
+    /* float: left; */
+}
+#l2 {
+    position: absolute;
+    right: 0px;
+    bottom: 6%;
+    width: 38.5%;
+    height: 10px;
+}
+
+body {
+    width: 30%;
+    min-width: 700px;
+    margin: auto;
+}
+/* .header-block {
+    border: 1px solid gray;
+} */
+main {
+    width: 100%;
+    /* height: 1000px; */
+}
+main:nth-child(2) {
+    margin-top: 1%;
+}
+
+#left-line {
+    /* float: left; */
+    position: absolute;
+    top: -2.2%;
+    left: 1%;
+    z-index: -1;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: rgb(66, 66, 241);
+    width: 2%;
+    height: 101.5%;
+}
+.container {
+    position: relative;
+    margin: 0% 0% 0% 3%;
+}
+h1 {
+    /* position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1; */
+    display: block;
+    /* height: 30px; */
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    /* border-width: 1px; */
+    border-color: rgb(66, 66, 241);
+    margin: 0% 0 0 0;
+
+    text-indent: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    color: whitesmoke;
+
+}
+.header-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    /* float: left; */
+    width: 100px;
+    height: 27px;
+    margin: 0px 0px 5px 0px;
+    background-color: rgb(66, 66, 241);
+    z-index: -1;
+
+}
+
+/* 基本信息 */
+/* #div2 {
+    margin: 50px;
+} */
+#baseInfo {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    /* border: 1px solid; */
+    padding: 0px;
+    margin: 0px 0px 1px 0px;
+}
+main ul {
+    float: left;
+    list-style-type: none;
+    /* border: 1px solid; */
+    text-align: left;
+    line-height: 160%;
+    padding-left: 2%;
+}
+main #ul1 {
+    /* height: 92%; */
+    padding-top: 3%;
+    margin: 0px 0px 0px 4%;
+}
+main #ul2 {
+    /* height: 92%; */
+    padding-top: 1.5%;
+    margin: 0px 0px 0px 4%;
+}
+#baseInfo img {
+    margin: 3% 0% 0% 8%; 
+}
+
+#selfDesc {
+    margin-left: 2%;
+}
+
+#project {
+    margin-left: 5%;
+    margin-top: 0.5%;
+    /* border: 1px solid; */
+}
+
+#project span.c1 {
+    margin-left: 10%;
+    text-align: center;
+    /* border: 1px solid; */
+}
+
+#project span.c2  {
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+    /* border: 1px solid; */
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+#project p {
+    margin: 0.8% 0px;
+    text-indent: 2em;
+}
+
+#skill {
+    /* width: 100%; */
+    overflow-x:auto;
+}
+/* #skill tr:nth-child(even) {
+    background-color: #f2f2f2;
+} */
+table {
+    /* width: 94%; */
+    /* padding: 20px; */
+    margin: 1% 0 0 4.5%;
+    /* border: 1px solid; */
+    /* text-align: left; */
+    border-collapse: collapse;
+}
+th {
+    /* border: 1px solid; */
+    /* padding: 2px 10px 2px 10px; */
+    font-weight: normal;
+}
+td {
+    /* border: 1px solid; */
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.bold {
+    font-weight: bold;
+}
+
+
+/* #skill table tr td.c1 { */
+    /* padding-left: 30; */
+    /* padding-right: 30; */
+    /* text-align: center; */
+    /* padding-left: 30; */
+    /* background-color: rgb(66, 66, 241); */
+/* } */
+
+#education td {
+    /* border: 1px solid; */
+    /* padding-right: 10%; */
+    padding: 5px 32px 5px 10px;
+    /* margin-right: 30px; */
+    /* width: 0.1%;  */
+    /* margin: 0%; */
+    /* text-align: center; */
+}
+
+footer p {
+    font-size: 2%;
+    text-align: center;
+}
+
