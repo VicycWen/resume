@@ -171,30 +171,24 @@ main #ul2 {
     margin-left: 2%;
 }
 
-#project {
-    margin-left: 5%;
-    margin-top: 0.5%;
-    /* border: 1px solid; */
+#project{
+    width: 102%;
+    margin-left: -2%;
 }
 
-#project span.c1 {
-    margin-left: 10%;
-    text-align: center;
-    /* border: 1px solid; */
+#project table td{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 5px 0px 5px 15px;
 }
 
-#project span.c2  {
-    display: inline-block;
-    width: 60%;
-    text-align: center;
-    /* border: 1px solid; */
-    margin-top: 1%;
-    margin-left: 5%;
+
+#project th{
+    font-weight: bold;
 }
 
-#project p {
-    margin: 0.8% 0px;
-    text-indent: 2em;
+#project span{
+    font-weight: bold;
 }
 
 #skill {
