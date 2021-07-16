@@ -4,7 +4,7 @@ header {
     width: 50%;
     /* margin: auto; */
 
-    min-width: 700px;
+    min-width: 800px;
 }
 header div {
     position: relative;
@@ -30,7 +30,7 @@ header div {
     left: 400px; */
     /* margin: auto; */
     /* top: 10px; */
-    margin: 10px 0px 0px 0px;
+    margin: 8px 0px 0px 50px;
     /* margin-left: auto;
     margin-right: auto; */
     width: 50%;
@@ -43,7 +43,7 @@ header div {
 #imageList {
     position: absolute;
     top: 0%;
-    right: 10%;
+    right: 4%;
 }
 #blue-band {
     margin: 0%;
@@ -69,22 +69,19 @@ header div {
 
 body {
     width: 30%;
-    min-width: 700px;
+    min-width: 800px;
     margin: auto;
 }
-/* .header-block {
-    border: 1px solid gray;
-} */
+
 main {
     width: 100%;
-    /* height: 1000px; */
 }
+/* 基本信息margin-top */
 main:nth-child(2) {
     margin-top: 1%;
 }
 
 #left-line {
-    /* float: left; */
     position: absolute;
     top: -2.2%;
     left: 1%;
@@ -132,43 +129,24 @@ h1 {
 
 }
 
-/* 基本信息 */
-/* #div2 {
-    margin: 50px;
-} */
-/* #baseInfo {
-    position: relative;
-    width: 100%;
-    height: 110px;
-    border: 1px solid;
-    padding: 0px;
-    margin: 0px 0px 1px 0px;
-}
-main ul {
-    float: left;
-    list-style-type: none;
-    border: 1px solid;
-    text-align: left;
-    line-height: 160%;
-    padding-left: 2%;
-} */
 
 #baseInfo {
-    /* position: flex;
-    flex-direction: column;
-    justify-content: flex-end; */
-    /* align-items: center; */
-    /* align-content: center; */
     display: flex;
     justify-content: left;
 
-    /* margin: 0 0 0 4%; */
     padding: 0%;
+    margin: 0;
 
 }
 
 main #ul1 {
-    margin: 0 0 0 4%;
+    margin: 0 0 0 3%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main #ul2 {
+    margin: 2% 0 0 4%;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -176,11 +154,13 @@ main #ul1 {
 
 
 #baseInfo img {
-    height: 30%;
-    width: 10%;
-    display: block;
+    display: inline;
 
-    margin: 4% 0 0 4%;
+    height: 28%;
+    width: 9%;
+
+
+    margin: 2.6% 0 0 14%;
 }
 
 #selfDesc {
@@ -188,7 +168,7 @@ main #ul1 {
 }
 
 #project{
-    width: 102%;
+    width: 100%;
     margin-left: -2%;
 }
 
@@ -210,46 +190,37 @@ main #ul1 {
     font-weight: bold;
 }
 
-#skill {
-    /* width: 100%; */
-    overflow-x:auto;
-}
-/* #skill tr:nth-child(even) {
-    background-color: #f2f2f2;
-} */
+
 table {
-    /* width: 94%; */
-    /* padding: 20px; */
-    margin: 1% 0 0 4.5%;
+    margin: 1% 0% 0 4.5%;
     /* border: 1px solid; */
-    /* text-align: left; */
     border-collapse: collapse;
 }
 th {
-    /* border: 1px solid; */
-    /* padding: 2px 10px 2px 10px; */
     font-weight: normal;
 }
-#skill td {
-    /* border: 1px solid; */
-    padding-left: 17px;
-    padding-right: 17px;
+
+#skill{
+    margin: 1% 0 1% 1%;
+}
+
+#skill td:first-child {
+    text-align: center;
+}
+#skill #td-2nd{
+    text-align:left;
 }
 .bold {
     font-weight: bold;
 }
 
 
-/* #skill table tr td.c1 { */
-    /* padding-left: 30; */
-    /* padding-right: 30; */
-    /* text-align: center; */
-    /* padding-left: 30; */
-    /* background-color: rgb(66, 66, 241); */
-/* } */
-
+#education{
+    width: 95%;
+    margin: 1% 0 0 3%;
+}
 #education td {
-    padding: 5px 6px 5px 6px;
+    padding: 5px 6px 5px 20px;
 }
 
 footer p {
