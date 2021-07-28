@@ -179,11 +179,14 @@ main #ul2 {
 }
 
 
-#project th{
+/* #project th{
+    font-weight: bold;
+} */
+#project table tr:nth-child(5) th{
     font-weight: bold;
 }
-#project table tr:first-child th{
-    font-weight: normal;
+#project table tr:nth-child(7) th{
+    font-weight: bold;
 }
 
 #project span{
