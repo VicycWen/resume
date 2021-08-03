@@ -1,70 +1,7 @@
-header {
-    position: relative;
-    /* border: 1px solid gray; */
-    width: 50%;
-    /* margin: auto; */
-
-    min-width: 800px;
-}
-header div {
-    position: relative;
-    /* border: 1px solid; */
-    margin: 0px;
-}
-#header {
-    float: left;
-    width: 20%;
-    height: 100%;
-    /* border: 1px solid gray; */
-    margin: 5px 0px 0px 0px;
-
-    text-indent: 10px;
-    text-align: center;
-    font-size: 25px;
-    color: rgb(66, 66, 241);
-}
-#headerDesc {
-    position: relative;
-    /* position: relative;
-    top: 20px;
-    left: 400px; */
-    /* margin: auto; */
-    /* top: 10px; */
-    margin: 8px 0px 0px 50px;
-    /* margin-left: auto;
-    margin-right: auto; */
-    width: 50%;
-    /* border: 1px solid gray; */
-
-    text-align: center;
-    font-size: smaller;
-    color: rgb(172, 169, 169);
-}
-#imageList {
-    position: absolute;
-    top: 0%;
-    right: 4%;
-}
-#blue-band {
-    margin: 0%;
-} 
-#l1,#l2 {
-    border: 1px solid gray;
-    margin: 0px;
-    display: inline-block;
-    background-color: rgb(66, 66, 241);
-}
-#l1 {
-    width: 60%;
-    height: 15px;
-    /* float: left; */
-}
-#l2 {
-    position: absolute;
-    right: 0px;
-    bottom: 6%;
-    width: 38.5%;
-    height: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -72,162 +9,194 @@ body {
     min-width: 800px;
     margin: auto;
 }
-
 main {
-    width: 100%;
-}
-/* 基本信息margin-top */
-main:nth-child(2) {
-    margin-top: 1%;
+    /* width: 100%; */
+    margin-left: 20px;
+    /* border: 1px solid red; */
 }
 
-#left-line {
+.left-line {
     position: absolute;
-    top: -2.2%;
-    left: 1%;
+    margin-top: -6px;
+    margin-left: -2%;
     z-index: -1;
+
     border-style: solid;
     border-width: 0px 1px 0px 0px;
-    border-color: rgb(66, 66, 241);
+    border-color: #558ed5;
     width: 2%;
-    height: 101.5%;
+    height: 1140px;
+
 }
-.container {
-    position: relative;
-    margin: 0% 0% 0% 3%;
+
+header {
+    /* border: 1px solid red; */
+    width: 102%;
+    margin-bottom: 10px;
 }
-h1 {
+
+.header-first-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: left; 
+    align-items: center; 
+}
+
+
+.header-first-line p{
+    display: inline-block;
+    /* width: 50%; */
+    /* border: 1px solid red; */
+}
+.header-first-line div{
+    display: inline-block;
+    right: 0;
+}
+.header-first-line .header{
+    text-indent: 15px;
+    text-align: center;
+    font-size: 35px;
+    color: #558ed5;
+}
+.header-first-line .headerDesc{
+    flex: 1;
+    /* width: 100%; */
+    /* text-align: right; */
+    text-align: center;
+    font-size: smaller;
+    color: rgb(172, 169, 169);
+}
+.header-first-line .imageList{
+    width: 15%;
     /* position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1; */
+    right: 0; */
+    text-align: right;
+    /* border: 1px solid red; */
+    margin-right: 2%;
+}
+
+#blue-band1{
+    width: 60%;
+    height: 20px;
+}
+#blue-band2{
+    width: 40%;
+    height: 15px;
+    margin-left: -10px;
+}
+
+h1 {
     display: block;
     /* height: 30px; */
     border-style: solid;
     border-width: 0px 0px 1px 0px;
-    border-color: rgb(66, 66, 241);
-    margin: 0% 0 0 0;
+    border-color: #558ed5;
+    margin: 0% 0 0 -2px;
 
     text-indent: 10px;
     text-align: left;
     font-size: 20px;
     font-weight: normal;
     color: whitesmoke;
-
 }
-.header-decoration {
+
+.header-decoration{
     position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    /* float: left; */
-    width: 100px;
-    height: 27px;
-    margin: 0px 0px 5px 0px;
-    background-color: rgb(66, 66, 241);
     z-index: -1;
-
+    width: 180px;
+    height: 40px;
+    /* margin: -2.4% 0 0 -1.8%; */
+    margin: -30px 0 0 -22px;
 }
 
 
-#baseInfo {
+.baseInfo-wrap{
+    /* border: 1px solid red; */
+}
+.baseInfo{
     display: flex;
-    justify-content: left;
+    justify-content: space-around;
+    align-items:center;
+    margin-left: -5%;
+}
+.ul2{
+    transform: translate(0,6px);
+}
+.baseInfo li{
+    list-style-type: none;
+}
+.baseInfo img {
+    width: 80px;
+    height: 100px;
+    padding-top: 4%;
 
-    padding: 0%;
-    margin: 0;
-
+    transform: translate(0,10px);
 }
 
-main #ul1 {
-    margin: 0 0 0 3%;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-}
-main #ul2 {
-    margin: 2% 0 0 4%;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
+/* 专业技能 */
+.skill{
+    margin: 2% 0 2% 5%;
+    /* border: 1px solid red; */
 }
 
-
-#baseInfo img {
-    display: inline;
-
-    height: 28%;
-    width: 9%;
-
-
-    margin: 2.6% 0 0 14%;
+/* 项目经历 */
+.project{
+    width: 100%;
+    margin-top: 2%;
+    /* margin-left: 2%; */
+}
+.project table td{
+    /* border: 1px solid red; */
+    padding: 5px 0px 5px 0px;
+}
+.project th{
+    font-weight:normal;
+}
+.project table tr:nth-child(5) th{
+    font-weight: bold;
+}
+.project table tr:nth-child(7) th{
+    font-weight: bold;
+}
+.project table tr:last-child{
+    text-align: center;
+}
+.project span{
+    font-weight: bold;
 }
 
-#selfDesc {
+/* 技能证书与教育背景 */
+table{
+    border-collapse: collapse;
     margin-left: 2%;
 }
-
-#project{
-    width: 100%;
-    margin-left: -2%;
-}
-
-#project table td{
-    /* border: 1px solid red; */
-    margin: 0;
-    padding: 5px 0px 5px 15px;
-}
-
-
-/* #project th{
-    font-weight: bold;
-} */
-#project table tr:nth-child(5) th{
-    font-weight: bold;
-}
-#project table tr:nth-child(7) th{
-    font-weight: bold;
-}
-
-#project span{
-    font-weight: bold;
-}
-
-
-table {
-    margin: 1% 0% 0 4.5%;
-    /* border: 1px solid; */
-    border-collapse: collapse;
-}
-th {
-    font-weight: normal;
-}
-
-#skill{
+.certificate{
     margin: 1% 0 1% 1%;
 }
 
-#skill td:first-child {
+.certificate td:first-child {
     text-align: center;
 }
-#skill #td-2nd{
+.skcertificatell td-2nd{
     text-align:left;
 }
 .bold {
     font-weight: bold;
 }
 
-
-#education{
-    width: 95%;
-    margin: 1% 0 0 3%;
+.education{
+    width: 105%;
 }
-#education td {
+.education td {
     padding: 5px 6px 5px 20px;
+    margin-right: 20px;
 }
+
 
 footer p {
     font-size: 2%;
     text-align: center;
+    margin: 1%;
 }
+
 
