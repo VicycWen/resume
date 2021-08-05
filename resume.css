@@ -1,3 +1,11 @@
+@keyframes welcome-word{
+    0% {transform: translateX(400px);}
+    /* 25% {transform:translate(-300px,0)} */
+    50% {transform:translate(-100px,0)}
+    /* 51% {transform:translate(600px,0)} */
+    100% {transform:translate(-600px,0)}
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +22,38 @@ main {
     /* width: 100%; */
     margin-left: 20px;
     /* border: 1px solid red; */
+}
+
+.welcome-word{
+    width: 350px;
+    height: 20px;
+    padding: 2px 14px;
+    margin: auto;
+
+    border: 0.5px solid rgb(192, 191, 191);
+    border-radius: 8px;
+    background-color: rgb(250, 243, 233);
+    box-shadow: 2px 4px 4px rgb(192, 191, 191);
+
+    font-family: "DFKai-SB","STXihei","STHeiti Light";
+    font-size: 14px;
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.welcome-word p{
+    width: 600px;
+    height: 20px;
+    line-height: 20px;
+
+    animation-name: welcome-word;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    /* animation-delay: -1.5s; */
+    animation-iteration-count: infinite;
+    /* transition:margin-left 3s; */
+    
 }
 
 .left-line {
@@ -33,7 +73,9 @@ main {
 header {
     /* border: 1px solid red; */
     width: 102%;
+    margin-top: 15px;
     margin-bottom: 10px;
+    /* overflow: hidden; */
 }
 
 .header-first-line{
@@ -120,12 +162,21 @@ h1 {
     list-style-type: none;
 }
 .baseInfo img {
+    position: relative;
     width: 80px;
     height: 100px;
-    padding-top: 10px;
+    /* padding-top: 20px; */
+    align-self: flex-end;
 
-    transform: translate(0,10px);
+    transform: translate(0,15px);
+    
 }
+.baseInfo img:hover {
+    transition: transform 2s;
+    transform: scale(2);
+    box-shadow: 2px 3px 3px 1px rgb(192, 191, 191);
+}
+
 
 /* 专业技能 */
 .skill{
@@ -178,7 +229,7 @@ table{
 .certificate td:first-child {
     text-align: center;
 }
-.skcertificatell td-2nd{
+#td-2nd{
     text-align:left;
 }
 .bold {
