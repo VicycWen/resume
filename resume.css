@@ -1,9 +1,7 @@
 @keyframes welcome-word{
     0% {transform: translateX(400px);}
-    /* 25% {transform:translate(-300px,0)} */
-    50% {transform:translate(-100px,0)}
-    /* 51% {transform:translate(600px,0)} */
-    100% {transform:translate(-600px,0)}
+    /* 50% {transform:translate(-100px,0)} */
+    100% {transform:translate(-650px,0)}
 }
 
 * {
@@ -43,7 +41,7 @@ main {
 }
 
 .welcome-word p{
-    width: 600px;
+    width: 650px;
     height: 20px;
     line-height: 20px;
 
@@ -199,7 +197,7 @@ h1 {
 }
 .project table td{
     /* border: 1px solid red; */
-    padding: 5px 0px 5px 0px;
+    padding: 5px;
 }
 .project th{
     font-weight:normal;
@@ -224,6 +222,9 @@ table{
 }
 .certificate{
     margin: 8px 0 8px 8px;
+}
+.certificate th{
+    font-weight: normal;
 }
 
 .certificate td:first-child {
